@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Ponokawan Express - Jasa angkut cepat dan aman di Bandung & sekitarnya. Pindahan rumah, material bangunan, kirim barang usaha.">
+<meta name="keywords" content="jasa angkut, pindahan, Bandung, armada">
+<meta name="author" content="Ponokawan Express">
+<title>Ponokawan Express Premium - Jasa Angkut Bandung</title>
+<link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+
+<header>
+<div class="logo">
+<img src="assets/logo.png" alt="Ponokawan Express Logo">
+<div>
+<b>Ponokawan Express</b><br>
+<small>Bandung & Sekitarnya</small>
+</div>
+</div>
+<a class="btn" href="https://wa.me/6281224666656">WhatsApp</a>
+</header>
+
+<section class="hero">
+<h1>Jasa Angkut Cepat & Aman 🚚</h1>
+<p>Pindahan, material, dan kirim barang usaha</p>
+</section>
+
+<section class="section">
+<h2>Layanan</h2>
+<div class="grid grid-3">
+<div class="card">🏠 Pindahan Rumah</div>
+<div class="card">🏗️ Material Bangunan</div>
+<div class="card">📦 Kirim Barang Usaha</div>
+</div>
+</section>
+
+<!-- GALERI -->
+<section class="section">
+<h2>Galeri Armada</h2>
+<div class="grid grid-3 galeri">
+  <img src="assets/armada1.jpg" alt="Armada 1 - Pickup">
+  <img src="assets/armada2.jpg" alt="Armada 2 - Engkel">
+  <img src="assets/armada3.jpg" alt="Armada 3 - Box">
+  <img src="assets/armada4.jpg" alt="Armada 4 - Pickup">
+  <img src="assets/armada5.jpg" alt="Armada 5 - Engkel">
+  <img src="assets/armada6.jpg" alt="Armada 6 - Box">
+</div>
+</section>
+
+<section class="section">
+<h2>Order Sekarang</h2>
+
+<form oninput="hitungHarga()" onsubmit="kirimWA(event)">
+
+<input name="nama" placeholder="Nama" required>
+<input name="telp" placeholder="No WA" required>
+
+<label>Pilih Armada</label>
+<select name="armada" required>
+<option value="">Pilih Armada</option>
+<option value="80000">Pickup</option>
+<option value="150000">Engkel</option>
+<option value="250000">Box</option>
+</select>
+
+<input name="jarak" type="number" placeholder="Jarak (km)" required>
+
+<div class="price" id="harga">Estimasi: Rp -</div>
+<small>*Harga bisa berubah tergantung kondisi barang</small>
+
+<label>Jenis Order</label>
+<select name="opsi">
+<option value="Order">Langsung Order</option>
+<option value="Nego">Nego</option>
+<option value="Survey">Survey</option>
+</select>
+
+<label>Tambahan Tenaga</label>
+<select name="tenaga">
+<option value="0">Tanpa tenaga tambahan</option>
+<option value="75000">+1 tenaga (Rp75.000)</option>
+<option value="150000">+2 tenaga (Rp150.000)</option>
+</select>
+
+<label>Lantai</label>
+<select name="lantai">
+<option value="0">Lantai dasar</option>
+<option value="30000">Lantai 2 (+30rb)</option>
+<option value="60000">Lantai 3 (+60rb)</option>
+</select>
+
+<input name="jemput" placeholder="Lokasi Jemput" required>
+<input name="tujuan" placeholder="Tujuan" required>
+
+<textarea name="catatan" placeholder="Catatan"></textarea>
+
+<button type="submit">Kirim ke WhatsApp</button>
+
+</form>
+</section>
+
+<!-- POPUP FOTO -->
+<div id="popup">
+  <img id="popup-img" alt="Popup image">
+</div>
+
+<script src="js/main.js"></script>
+
+</body>
+</html>
