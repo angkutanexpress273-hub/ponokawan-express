@@ -1,0 +1,19 @@
+# Ignore OS files
+.DS_Store
+Thumbs.db
+.env.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Node (jika pakai build tools)
+node_modules/
+dist/
+build/
+
+# Logs
+*.log
+npm-debug.log*
